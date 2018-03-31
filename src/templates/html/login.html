@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Login page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+
+<body>
+    <div id="wrongPwdMsg" style="display:none;">
+        <blockquote class="alert alert-warning alert-dismissible fade show">
+                <p class="mb-0">{{.}}</p>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </blockquote>
+    </div>
+    <div class="container alert-info text-center">
+        <h1>Login:</h1>
+        <h2>Enter username and password:</h2>
+        <form action="/authenticate" method="POST">
+            <div>
+                <label>Username:</label>
+            </div>
+            <div>
+                <input type="text" name="email" placeholder="Enter username">
+            </div>
+            <div>
+                <label>Password:</label>
+            </div>
+            <div>
+                <input type="password" name="pwd" placeholder="Enter password">
+            </div>
+            <div>
+                <input type="submit" class="btn btn-success" value="Login">
+            </div>
+        </form>
+    </div>
+    <script>
+            {{if ne . ""}}
+                document.getElementById("wrongPwdMsg").style.display="block";
+            {{end}}
+    </script>
+</body>
+
+</html>

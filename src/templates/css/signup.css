@@ -1,0 +1,22 @@
+div {
+    display:block;
+    padding:2px;
+}
+
+input:not([type='submit']) {
+    border-radius:5%;
+    width:400px;
+}
+
+label {
+    font-size: 150%;
+}
+
+.btn {
+    width:20%;
+}
+
+body {
+    background-image:url('../staticFiles/images/signup_page_image.jpg');
+    background-size:cover;
+}

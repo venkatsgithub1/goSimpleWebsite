@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>Signup page</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="/static/css/signup.css">
+</head>
+
+<body>
+    <div class="container alert-success text-center">
+        <h1>Signup:</h1>
+        <h2>Enter your details:</h2>
+        <form action="/signupUser" method="POST">
+            <div>
+                <label>First Name:</label>
+            </div>
+            <div>
+                <input type="text" name="firstname" placeholder="Enter your first name">
+            </div>
+            <div>
+                <label>Last Name:</label>
+            </div>
+            <div>
+                <input type="text" name="lastname" placeholder="Enter your last name">
+            </div>
+            <div>
+                <label>Email address:</label>
+            </div>
+            <div>
+                <input type="email" name="email" placeholder="Enter your email address">
+            </div>
+            <div>
+                <label>Username:</label>
+            </div>
+            <div>
+                <input type="text" name="username" placeholder="Enter username">
+            </div>
+            <div>
+                <label>Password:</label>
+            </div>
+            <div>
+                <input type="password" name="pwd" placeholder="Enter password">
+            </div>
+            <div>
+                <input type="submit" value="Signup" class="btn btn-primary">
+            </div>
+    </div>
+    </form>
+    </div>
+</body>
+
+</html>

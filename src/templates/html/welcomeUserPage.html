@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome user</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/welcomeUserPage.css">
+</head>
+<body>
+    <div class="container alert-info text-center">
+        <p>You've logged in successfully</p>
+        <nav class="navbar navbar-light bg-light justify-content-between">
+                <a class="navbar-brand">{{.Name}} Page</a>
+                <div class="row">
+                    <div class="col-md-4">
+                <form class="form-inline" method="POST" action="/signout">
+                  <button class="btn btn-outline-danger" type="submit">Signout</button>
+                </form>
+            </div>
+            <div class="col-md-1">
+                <form class="form-inline" method="POST" action="/signoutEverywhere">
+                    <button class="btn btn-outline-danger" type="submit">Signout everywhere</button>
+                  </form>
+                </div>
+                </div>
+              </nav>
+    </div>
+</body>
+</html>

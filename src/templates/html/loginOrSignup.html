@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Welcome</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/welcome.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to website test with Go!</h1>
+        <h3>Do you want to login or signup ?</h3>
+        <div class="row">
+            <div class="col-md-1">
+                <form action="/login" method="POST">
+                    <input class="btn btn-primary" type="submit" value="Login">
+                </form>
+            </div>
+            <div class="col-md-1">
+                <form action="/signup" method="POST">
+                    <input class="btn btn-success" type="submit" value="Signup">
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
